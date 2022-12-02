@@ -52,7 +52,7 @@ function Bandas() {
                 </tbody>
             </table>
             <div>
-                {selected === true ? <Detail ></Detail> : <div></div>}
+                {selected === true ? <Detail></Detail> : <div></div>}
             </div>
         </div>
     );
