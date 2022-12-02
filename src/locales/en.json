@@ -3,6 +3,8 @@
     "Pais": "Country",
     "Genero": "Genre",
     "Fundacion": "Foundation", 
-    "NavBar": "Music Bands"
+    "NavBar": "Music Bands", 
+    "Banda": "The oldest band is"
+
    
 }

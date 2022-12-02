@@ -10,6 +10,20 @@ const { useEffect, useState } = require("react");
 
 function Bandas() {
 
+    const antigua = () => {
+        let maximo  =0; 
+        let bandaNombre = ""; 
+        bandas.forEach(banda => {
+            if(2022 - banda.foundation_year > maximo){
+                maximo = 2022 - banda.foundation_year; 
+                bandaNombre = banda.name;
+            }
+            
+        });
+        return bandaNombre; 
+       
+    };
+
     const [selected, setSelected] = useState(false);
     const clickSelected = () => {
         console.log("espiche la banda");
@@ -51,6 +65,7 @@ function Bandas() {
 
                 </tbody>
             </table>
+            <p> <FormattedMessage id="Banda" /> {antigua()}</p>
             <div>
                 {selected === true ? <Detail></Detail> : <div></div>}
             </div>
